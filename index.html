@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/css/projeto.css">
+</head>
+<body>
+    <header>
+        <h1>Indústria Wayne</h1>
+    </header>
+    <hr>
+    <div class="form-container">
+        <form class="registration-form" onsubmit="event.preventDefault(); validateLogin();">
+            <h2>Acessar o Sistema</h2>
+            <label for="name">Usuário</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="usuario">Tipo de Usuário:</label>
+            <select name="usuario" id="usuario">
+                <option value="funcionario">Funcionário</option>
+                <option value="gerente">Gerente</option>
+                <option value="administrador">Administrador</option>
+            </select>
+            
+            <button type="submit">Acessar o sistema</button>
+        </form>
+    </div>
+
+    <script src="src/scripts/projet.js"></script>
+</body>
+</html>
+
